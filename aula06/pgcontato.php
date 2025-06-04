@@ -27,7 +27,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form action="">
+                            <form action="opcontato.php?acao=cadastrar" method-"post">
                                 <div class="mb-3">
                                     <label class="form-label">Nome</label>
                                     <input type="text" class="form-control" name="nome">
