@@ -21,6 +21,7 @@ MySQL
 Bootstrap 5 para estilização
 
 ## 📂 Estrutura de Arquivos
+
 conexao.php — Conexão com o banco de dados
 
 index.php — Página principal com a lista de contatos
@@ -32,6 +33,31 @@ adicionar.php — Formulário para adicionar novo contato
 editar.php — Formulário para editar contato existente
 
 README.md — Documentação do projeto
+
+# Aula 2 – Lógica de Programação em PHP
+Este projeto traz exemplos práticos básicos de PHP envolvendo operações matemáticas, estruturas condicionais e manipulação de variáveis.
+
+## ▶️ Como Usar
+Abra os arquivos PHP em seu servidor local.
+
+Veja os exemplos de cálculo de saldo, conversão de moedas, média de notas e operadores relacionais.
+
+Execute para entender a saída e testar alterações.
+
+## 🛠️ Tecnologias Utilizadas
+PHP básico para lógica e manipulação de variáveis
+
+HTML e CSS para exibição e estilo simples
+
+## 📂 Estrutura de Arquivos
+
+aula02.php — Código com exemplos e exercícios de lógica
+
+style.css — Estilos para as páginas de saída
+
+README.md — Documentação do projeto
+
+
 
 # Aula 04 – Cadastro de Preferências com PHP
 
