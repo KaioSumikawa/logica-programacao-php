@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.caixa {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.resultado {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+}
+
+.reprovado {
+    background-color: #e74c3c;
+    color: white; 
+}
+
+.aprovado {
+    background-color: #2ecc71; 
+    color: white;
+}
+
+.exame {
+    background-color: #f1c40f; 
+    color: black; 
+}
