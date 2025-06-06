@@ -1,6 +1,38 @@
 # logica-programacao-php
 Exercícios e anotações do curso "Lógica de Programação Direcionada a PHP" do Senac. Foco em fundamentos da lógica com aplicação prática em PHP.
 
+# Aula 1 – Agenda de Contatos em PHP 
+Este projeto implementa uma agenda de contatos básica utilizando PHP e MySQL, permitindo cadastrar, editar, excluir e listar contatos.
+
+## ▶️ Como Usar
+Configure o banco de dados MySQL com a estrutura fornecida.
+
+Atualize os dados de conexão no arquivo conexao.php.
+
+Execute o projeto em um servidor local (XAMPP, WAMP, etc).
+
+Use a interface para cadastrar, editar, excluir e listar contatos.
+
+## 🛠️ Tecnologias Utilizadas
+PHP com PDO para conexão segura ao banco de dados
+
+MySQL
+
+Bootstrap 5 para estilização
+
+## 📂 Estrutura de Arquivos
+conexao.php — Conexão com o banco de dados
+
+index.php — Página principal com a lista de contatos
+
+opcontato.php — Processa as operações (inserir, editar, excluir)
+
+adicionar.php — Formulário para adicionar novo contato
+
+editar.php — Formulário para editar contato existente
+
+README.md — Documentação do projeto
+
 # Aula 04 – Cadastro de Preferências com PHP
 
 Este projeto é parte do curso de **Lógica de Programação com PHP** no SENAC. O objetivo é desenvolver um formulário web que colete informações do usuário e exiba os dados enviados utilizando PHP puro.
