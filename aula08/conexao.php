@@ -1,11 +1,18 @@
 <?php
+// conexao.php - conexão com banco usando PDO e tratamento de erros
+
 $host = "localhost";
-$db = "agenda";
+$db   = "agenda";
 $user = "root";
-$password = "";
+$pass = "";
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
+    // Configurar o PDO para lançar exceções em erros
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "Erro na conexão: " . $e->getMessage();
+    // Logar erro e mostrar mensagem amigável
+    error_log("Erro na conexão PDO: " . $e->getMessage());
+    die("Erro ao conectar ao banco de dados. Tente novamente mais tarde.");
 }
+?>

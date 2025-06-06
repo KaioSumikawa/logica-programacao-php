@@ -1,55 +1,40 @@
 <?php
-include "conexao.php";
+require_once "conexao.php";
 
-if ($_POST) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' || isset($_GET['acao'])) {
+    $acao = $_GET['acao'] ?? '';
 
-    $razao = $_POST['razao'] ?? '';
-    $fantasia = $_POST['fantasia'] ?? '';
-    $endereco = $_POST['endereco'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $telefone = $_POST['telefone'] ?? '';
-}
+    $razao = filter_input(INPUT_POST, 'razao', FILTER_SANITIZE_STRING);
+    $fantasia = filter_input(INPUT_POST, 'fantasia', FILTER_SANITIZE_STRING);
+    $endereco = filter_input(INPUT_POST, 'endereco', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $telefone = filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING);
 
-if (isset($_GET['acao'])) {
-   
-    if ($_GET['acao'] == 'cadastrar') {
-        $insert = $pdo->prepare("INSERT INTO fornecedores (razao, fantasia, endereco, email, telefone) VALUES (?, ?, ?, ?, ?)");
-        $insert->bindValue(1, $razao);
-        $insert->bindValue(2, $fantasia);
-        $insert->bindValue(3, $endereco);
-        $insert->bindValue(4, $email);
-        $insert->bindValue(5, $telefone);
-        $insert->execute();
+    switch ($acao) {
+        case 'cadastrar':
+            if ($razao && $fantasia && $endereco && $email && $telefone) {
+                $stmt = $pdo->prepare("INSERT INTO fornecedores (razao, fantasia, endereco, email, telefone) VALUES (?, ?, ?, ?, ?)");
+                $stmt->execute([$razao, $fantasia, $endereco, $email, $telefone]);
+            }
+            break;
 
- 
-        header('Location: pgfornecedor.php');
+        case 'editar':
+            $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+            if ($id && $razao && $fantasia && $endereco && $email && $telefone) {
+                $stmt = $pdo->prepare("UPDATE fornecedores SET razao = ?, fantasia = ?, endereco = ?, email = ?, telefone = ? WHERE id = ?");
+                $stmt->execute([$razao, $fantasia, $endereco, $email, $telefone, $id]);
+            }
+            break;
+
+        case 'excluir':
+            $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+            if ($id) {
+                $stmt = $pdo->prepare("DELETE FROM fornecedores WHERE id = ?");
+                $stmt->execute([$id]);
+            }
+            break;
     }
-
-
-    if ($_GET['acao'] == "excluir") {
-        $id = $_GET['id'];
-        $delete = $pdo->prepare("DELETE FROM fornecedores WHERE id = ?");
-        $delete->bindValue(1, $id);
-        $delete->execute();
-
-    
-        header('Location: pgfornecedor.php');
-    }
-
-
-    if ($_GET['acao'] == "editar") {
-        $id = $_GET['id'];
-        $update = $pdo->prepare("UPDATE fornecedores SET razao = ?, fantasia = ?, endereco = ?, email = ?, telefone = ? WHERE id = ?");
-        $update->bindValue(1, $razao);
-        $update->bindValue(2, $fantasia);
-        $update->bindValue(3, $endereco);
-        $update->bindValue(4, $email);
-        $update->bindValue(5, $telefone);
-        $update->bindValue(6, $id);
-        $update->execute();
-
-
-        header('Location: pgfornecedor.php');
-    }
+    header('Location: pgfornecedor.php');
+    exit();
 }
 ?>

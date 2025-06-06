@@ -1,45 +1,39 @@
 <?php
+require_once "conexao.php";
 
-include "conexao.php";
+if ($_SERVER['REQUEST_METHOD'] === 'POST' || isset($_GET['acao'])) {
+    $acao = $_GET['acao'] ?? '';
 
-if ($_POST) {
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-};
+    // Usar filtro para dados e prevenir SQL injection via PDO já ajuda
+    $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $telefone = filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING);
 
-if (isset($_GET['acao'])) {
-    if ($_GET['acao'] == 'cadastrar') {
-        $insert = $pdo->prepare("INSERT INTO contatos (nome,email,telefone) VALUES (?,?,?)");
-        $insert->bindValue(1, $nome);
-        $insert->bindValue(2, $email);
-        $insert->bindValue(3, $telefone);
+    switch ($acao) {
+        case 'cadastrar':
+            if ($nome && $email && $telefone) {
+                $stmt = $pdo->prepare("INSERT INTO contatos (nome, email, telefone) VALUES (?, ?, ?)");
+                $stmt->execute([$nome, $email, $telefone]);
+            }
+            break;
 
-        $insert->execute();
+        case 'editar':
+            $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+            if ($id && $nome && $email && $telefone) {
+                $stmt = $pdo->prepare("UPDATE contatos SET nome = ?, email = ?, telefone = ? WHERE id = ?");
+                $stmt->execute([$nome, $email, $telefone, $id]);
+            }
+            break;
 
-        header('Location: pgcontato.php');
+        case 'excluir':
+            $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+            if ($id) {
+                $stmt = $pdo->prepare("DELETE FROM contatos WHERE id = ?");
+                $stmt->execute([$id]);
+            }
+            break;
     }
-
-    if ($_GET['acao'] == "excluir") {
-        $id = $_GET['id'];
-
-        $delete = $pdo->prepare("DELETE FROM contatos WHERE id = ?");
-        $delete->bindValue(1, $id);
-        $delete->execute();
-
-        header('Location: pgcontato.php');
-    }
-
-    if ($_GET['acao'] == "editar") {
-        $id = $_GET['id'];
-
-        $update = $pdo->prepare("UPDATE contatos SET nome = ?, email = ?, telefone = ? WHERE id = ?");
-        $update->bindValue(1, $nome);
-        $update->bindValue(2, $email);
-        $update->bindValue(3, $telefone);
-        $update->bindValue(4, $id);
-
-        $update->execute();
-        header('Location: pgcontato.php');
-    }
+    header('Location: pgcontato.php');
+    exit();
 }
+?>
