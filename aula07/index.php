@@ -90,9 +90,9 @@ unset($_SESSION['old']);
     <input type="email" id="email" name="email" required value="<?php echo htmlspecialchars($old['email'] ?? '') ?>">
 
     <label for="telefone">Telefone:</label>
-    <input type="text" id="telefone" name="telefone" required value="<?php echo htmlspecialchars($old['telefone'] ?? '') ?>">
+    <input type="text" id="telefone" name="telefone" required placeholder="(99) 99999-9999" pattern="\d{10,11}" title="Apenas números, 10 a 11 dígitos" value="<?php echo htmlspecialchars($old['telefone'] ?? '') ?>">
 
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar" aria-label="Enviar formulário de contato">
 </form>
 
 </body>
