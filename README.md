@@ -57,6 +57,37 @@ style.css — Estilos para as páginas de saída
 
 README.md — Documentação do projeto
 
+# Aula 3 - Arrays e Estruturas de Dados em PHP
+## 📚 Descrição
+Esta aula aborda o uso de arrays simples e associativos em PHP para armazenar dados estruturados. Você verá exemplos práticos com listas de clientes e estoque de carros, incluindo a manipulação e exibição dessas informações dinamicamente.
+
+## 🗂️ Estrutura de Arquivos
+index.php — Página principal que carrega e exibe o estoque de carros usando PHP e HTML.
+
+clientes.php — Script PHP que contém os dados dos carros (arrays) e a lógica para exibir os itens.
+
+01.jpg, 02.jpg, 03.jpg — Imagens representando os carros do estoque.
+
+## ▶️ Como Usar
+Certifique-se de ter o PHP instalado no seu ambiente local ou servidor.
+
+Coloque todos os arquivos (index.php, clientes.php, imagens) na mesma pasta.
+
+Acesse o arquivo index.php pelo navegador (exemplo: http://localhost/aula3/index.php).
+
+Visualize a listagem dos carros com suas informações e imagens.
+
+## 💡 Conceitos abordados
+Arrays simples e associativos.
+
+Estrutura de dados em PHP.
+
+Laços de repetição para percorrer arrays (foreach).
+
+Exibição dinâmica de dados no HTML via PHP.
+
+Boas práticas de segurança, como uso de htmlspecialchars() para evitar problemas de injeção de código.
+
 
 
 # Aula 04 – Cadastro de Preferências com PHP
