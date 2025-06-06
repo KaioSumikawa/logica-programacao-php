@@ -274,23 +274,23 @@ Este projeto corresponde à Aula 8 do curso e consiste em um sistema web simples
 - Acesse as páginas via navegador e gerencie os registros.
 
 ## 🗃️ Tabelas SQL recomendadas
-sql
-Copiar
-Editar
-CREATE TABLE contatos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20) NOT NULL
+- sql
+- Copiar
+- Editar
+- CREATE TABLE contatos (
+    - id INT AUTO_INCREMENT PRIMARY KEY,
+    - nome VARCHAR(100) NOT NULL,
+    - email VARCHAR(100) NOT NULL,
+    - telefone VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE fornecedores (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    razao VARCHAR(150) NOT NULL,
-    fantasia VARCHAR(150) NOT NULL,
-    endereco VARCHAR(255) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20) NOT NULL
+- CREATE TABLE fornecedores (
+    - id INT AUTO_INCREMENT PRIMARY KEY,
+    - razao VARCHAR(150) NOT NULL,
+    - fantasia VARCHAR(150) NOT NULL,
+    - endereco VARCHAR(255) NOT NULL,
+    - email VARCHAR(100) NOT NULL,
+    - telefone VARCHAR(20) NOT NULL
 );
 ## ⚠️ Observações
 - Recomendado PHP 7.4 ou superior.
