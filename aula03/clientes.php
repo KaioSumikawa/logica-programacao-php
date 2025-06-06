@@ -1,28 +1,18 @@
 <?php
-$clientes = ["KAIO", "FELIPE", "FABIANO", "HUGO", "GABRIELA"];
-
-$cliente = [
-    "nome" => "KAIO",
-    "sobrenome" => "TOSHIYUKI",
-    "email" => "nome@hotmail.com"
+$estoqueCarros = [
+    ["modelo" => "CIVIC G10", "cor" => "BRANCO", "marca" => "HONDA", "foto" => "01.jpg"],
+    ["modelo" => "AMAROK", "cor" => "AZUL", "marca" => "VOLKSWAGEM", "foto" => "02.jpg"],
+    ["modelo" => "GM CRUZE", "cor" => "VERMELHO", "marca" => "GM", "foto" => "03.jpg"],
 ];
 
-$estoque = [
-    ["nome" => "KAIO", "sobrenome" => "TOSHIYUKI", "email" => "kaiotoshiyuki@hotmail.com", "foto" => "humano1.jpg"],
-    ["nome" => "FELIPE", "sobrenome" => "CUNHA", "email" => "felipecunha@hotmail.com", "foto" => "humano2.jpg"],
-    ["nome" => "FABIANO", "sobrenome" => "PROFESSOR", "email" => "fabianoprofessor@hotmail.com", "foto" => "humano3.jpg"],
-    ["nome" => "HUGO", "sobrenome" => "MELO", "email" => "hugomelo@hotmail.com", "foto" => "humano4.jpg"],
-    ["nome" => "GABRIELA", "sobrenome" => "SHIMODA", "email" => "gabrielashimoda@hotmail.com", "foto" => "humano5.jpg"],
-];
-
-foreach($estoque as $item){
-    echo "
-    <div style='margin-bottom: 20px;'>
-        <img src='{$item['foto']}' alt='{$item['nome']}' style='width:100px; height:auto;'><br>
-        <strong>Nome:</strong> {$item['nome']}<br>
-        <strong>Sobrenome:</strong> {$item['sobrenome']}<br>
-        <strong>Email:</strong> {$item['email']}<br>
-    </div>
-    ";
+foreach ($estoqueCarros as $carro) {
+    echo '<div class="carro">';
+    echo '<img src="' . htmlspecialchars($carro['foto']) . '" alt="' . htmlspecialchars($carro['modelo']) . '">';
+    echo '<div class="info">';
+    echo '<p><strong>Modelo:</strong> ' . htmlspecialchars($carro['modelo']) . '</p>';
+    echo '<p><strong>Cor:</strong> ' . htmlspecialchars($carro['cor']) . '</p>';
+    echo '<p><strong>Marca:</strong> ' . htmlspecialchars($carro['marca']) . '</p>';
+    echo '</div>';
+    echo '</div>';
 }
 ?>

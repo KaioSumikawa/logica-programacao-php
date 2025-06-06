@@ -1,29 +1,73 @@
-body{
-    font-family: Arial;
+body {
+    font-family: Arial, sans-serif;
     background: #b6b5b5;
     padding: 30px;
 }
-form{
+
+form, .container {
     background: white;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 10px;
     width: 400px;
     margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-label{
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
     display: block;
     margin-top: 10px;
 }
-input, select{
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
-.grupo{
-    margin-bottom: 10px;
-    background: #ccc;
-    padding: 5px;
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin-top: 15px;
     border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.errors ul {
+    padding-left: 20px;
 }

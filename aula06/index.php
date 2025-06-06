@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Agendamento Odontológico</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <form action="receba.php" method="POST">
-        <h2>Cadastro de Preferências Pessoais</h2>
+    <form action="receba.php" method="POST" novalidate>
+        <h2>Agendamento Odontológico</h2>
 
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required placeholder="Seu nome completo" />
 
-        <label>Dentista</label>
-        <div class="grupo">
-            <input type="radio" name="dentista" value="Álvaro da Silva" id="dentista1">
-            <label for="dentista1">Álvaro da Silva</label>
+        <fieldset>
+            <legend>Dentista</legend>
+            <label><input type="radio" name="dentista" value="Álvaro da Silva" required /> Álvaro da Silva</label>
+            <label><input type="radio" name="dentista" value="Silvia Martins" /> Silvia Martins</label>
+            <label><input type="radio" name="dentista" value="Lucio Otávio" /> Lucio Otávio</label>
+        </fieldset>
 
-            <input type="radio" name="dentista" value="Silvia Martins" id="dentista2">
-            <label for="dentista2">Silvia Martins</label>
+        <fieldset>
+            <legend>Serviços</legend>
+            <label><input type="checkbox" name="servicos[]" value="Limpeza" /> Limpeza</label>
+            <label><input type="checkbox" name="servicos[]" value="Clareamento" /> Clareamento</label>
+            <label><input type="checkbox" name="servicos[]" value="Ortodontia" /> Ortodontia</label>
+            <label><input type="checkbox" name="servicos[]" value="Prótese" /> Prótese</label>
+            <label><input type="checkbox" name="servicos[]" value="Canal" /> Canal</label>
+        </fieldset>
 
-            <input type="radio" name="dentista" value="Lucio Otávio" id="dentista3">
-            <label for="dentista3">Lucio Otávio</label>
-        </div>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data" required />
 
-        <label>Serviços</label>
-        <div class="grupo">
-            <input type="checkbox" name="servicos[]" value="Limpeza" id="servico1">
-            <label for="servico1">Limpeza</label>
+        <label for="hora_consulta">Hora da Consulta:</label>
+        <input type="time" name="hora_consulta" id="hora_consulta" required />
 
-            <input type="checkbox" name="servicos[]" value="Clareamento" id="servico2">
-            <label for="servico2">Clareamento</label>
-
-            <input type="checkbox" name="servicos[]" value="Ortodontia" id="servico3">
-            <label for="servico3">Ortodontia</label>
-
-            <input type="checkbox" name="servicos[]" value="Prótese" id="servico4">
-            <label for="servico4">Prótese</label>
-
-            <input type="checkbox" name="servicos[]" value="Canal" id="servico5">
-            <label for="servico5">Canal</label>
-        </div>
-
-        <label for="data">Data</label>
-        <input type="date" name="data" id="data">
-
-        <label for="hora_consulta">Hora da Consulta</label>
-        <input type="time" name="hora_consulta" id="hora_consulta">
-
-        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
