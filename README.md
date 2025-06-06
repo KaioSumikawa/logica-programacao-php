@@ -299,8 +299,7 @@ Este projeto corresponde à Aula 8 do curso e consiste em um sistema web simples
 
 - Validações adicionais são indicadas para ambientes produtivos.
 
-## 📜 Licença
-Projeto aberto para uso e modificação.
+
 
 ## 🏫 Curso
 
@@ -308,4 +307,5 @@ Projeto aberto para uso e modificação.
 Professor: Fabiano Albers
 Aluno: Kaio Sumikawa
 
-📁 Licença: Uso educacional
+## 📜 Licença: Uso educacional
+Projeto aberto para uso e modificação.
