@@ -167,6 +167,38 @@ Nesta aula, você aprende a criar um formulário em HTML que envia dados para um
 - O código utiliza filtros básicos para sanitização dos dados recebidos.
 - É importante validar e sanitizar dados em qualquer aplicação que receba entrada do usuário.
 
+# Aula 6 - Agendamento Odontológico com PHP
+
+## 📋 Descrição
+
+Nesta aula, criamos um sistema simples de agendamento odontológico usando PHP e formulários HTML. O usuário pode selecionar um dentista, escolher serviços, data e hora da consulta. Os dados são enviados via POST e exibidos em uma página de confirmação.
+
+## ▶️ Como Usar
+
+1. Abra o arquivo `index.php` em um servidor local ou ambiente PHP.
+2. Preencha o formulário com seu nome, escolha o dentista, os serviços desejados, a data e a hora da consulta.
+3. Clique em **Enviar**.
+4. A página `receba.php` exibirá os dados enviados para confirmação.
+
+## 🗂 Estrutura de Arquivos
+
+- `index.php` — Formulário HTML para agendamento
+- `receba.php` — Processa e exibe os dados enviados
+- `style.css` — Estilos CSS para o formulário e página de resultado
+- `README.md` — Documentação do projeto
+
+## 💡 Tecnologias Utilizadas
+
+- PHP (recepção e processamento dos dados)
+- HTML5 (estrutura do formulário)
+- CSS (estilo visual)
+
+## 📝 Observações
+
+- Utilizamos `htmlspecialchars()` para garantir a segurança ao exibir dados do usuário.
+- O layout é responsivo e simples, focado na usabilidade.
+- O sistema é um exemplo básico, ideal para entender o funcionamento de formulários em PHP.
+
 ## 📌 Observações
 
 Este projeto é apenas para fins didáticos, como parte de uma sequência de aulas introdutórias de PHP.  
