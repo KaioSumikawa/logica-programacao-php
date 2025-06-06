@@ -1,7 +1,6 @@
 <?php
 include "conexao.php";
 
-// Segurança básica
 $acao = $_GET['acao'] ?? '';
 $id = $_POST['id'] ?? $_GET['id'] ?? null;
 
