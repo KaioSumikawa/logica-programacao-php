@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Agendamento Odontológico</title>
+    <title>Agendamento Odontológico 🦷</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -35,7 +35,7 @@
         <label for="hora_consulta">Hora da Consulta:</label>
         <input type="time" name="hora_consulta" id="hora_consulta" required />
 
-        <button type="submit">Enviar</button>
+        <button type="submit" style="margin-top: 15px; padding: 10px 20px; cursor: pointer;">Enviar</button>
     </form>
 </body>
 </html>
