@@ -135,6 +135,37 @@ http://localhost/aula04/index.php
 - Conversão de data com `strtotime()` e `date()`.
 - Laços de repetição `foreach` para listar múltiplos valores.
 - Proteção contra XSS com `htmlspecialchars()`.
+  
+# Aula 5 - Formulários com PHP
+
+## 📋 Descrição
+
+Nesta aula, você aprende a criar um formulário em HTML que envia dados para um script PHP, que os processa e exibe na tela. É uma introdução prática ao uso de formulários e ao tratamento de dados recebidos via método POST.
+
+## ▶️ Como Usar
+
+1. Abra o arquivo `index.php` no seu servidor local ou ambiente de desenvolvimento PHP.
+2. Preencha os campos do formulário.
+3. Clique em **Enviar**.
+4. Você será redirecionado para a página `recebimento.php`, que mostrará os dados enviados.
+5. Clique em **Voltar** para retornar ao formulário.
+
+## 🗂 Estrutura de Arquivos
+
+- `index.php` — Página com o formulário HTML
+- `recebimento.php` — Script PHP que recebe e exibe os dados enviados
+- `README.md` — Documentação do projeto
+
+## 💡 Tecnologias Utilizadas
+
+- PHP (processamento do formulário)
+- HTML5 (estrutura do formulário)
+- CSS (estilos básicos embutidos)
+
+## 📝 Observações
+
+- O código utiliza filtros básicos para sanitização dos dados recebidos.
+- É importante validar e sanitizar dados em qualquer aplicação que receba entrada do usuário.
 
 ## 📌 Observações
 
