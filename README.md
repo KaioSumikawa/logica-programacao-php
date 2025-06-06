@@ -234,44 +234,44 @@ Mensagem de confirmação via parâmetro GET.
 Este projeto corresponde à Aula 8 do curso e consiste em um sistema web simples para gerenciar contatos e fornecedores, utilizando PHP com PDO para conexão segura ao banco de dados MySQL e Bootstrap 5 para a interface.
 
 ## 🚀 Funcionalidades
-📇 Cadastro, edição e exclusão de contatos.
+- Cadastro, edição e exclusão de contatos.
 
-🏢 Cadastro, edição e exclusão de fornecedores.
+- Cadastro, edição e exclusão de fornecedores.
 
-💻 Interface responsiva com modais para formulários.
+- Interface responsiva com modais para formulários.
 
-🔒 Uso de prepared statements para segurança.
+- Uso de prepared statements para segurança.
 
-📋 Navegação por menu dinâmico.
+- Navegação por menu dinâmico.
 
 ## 🛠️ Tecnologias
-🐘 PHP 7+
+- PHP 7+
 
-🗄️ MySQL
+- MySQL
 
-🔗 PDO
+- PDO
 
-🎨 Bootstrap 5
+- Bootstrap 5
 
 ## 📂 Estrutura do Projeto
-🔌 conexao.php — conexão PDO.
+- conexao.php — conexão PDO.
 
-📜 menu.php — menu comum.
+- menu.php — menu comum.
 
-📇 pgcontato.php — gerenciamento de contatos.
+- pgcontato.php — gerenciamento de contatos.
 
-🏢 pgfornecedor.php — gerenciamento de fornecedores.
+- pgfornecedor.php — gerenciamento de fornecedores.
 
-⚙️ opcontato.php e opfornecedor.php — operações CRUD.
+- opcontato.php e opfornecedor.php — operações CRUD.
 
 ## ⚙️ Como usar
-🛠️ Configure o banco de dados com as tabelas contatos e fornecedores.
+- Configure o banco de dados com as tabelas contatos e fornecedores.
 
-🔑 Atualize conexao.php com as credenciais.
+- Atualize conexao.php com as credenciais.
 
-🌐 Coloque os arquivos no servidor web.
+- Coloque os arquivos no servidor web.
 
-🔍 Acesse as páginas via navegador e gerencie os registros.
+- Acesse as páginas via navegador e gerencie os registros.
 
 ## 🗃️ Tabelas SQL recomendadas
 sql
@@ -293,11 +293,11 @@ CREATE TABLE fornecedores (
     telefone VARCHAR(20) NOT NULL
 );
 ## ⚠️ Observações
-🖥️ Recomendado PHP 7.4 ou superior.
+- Recomendado PHP 7.4 ou superior.
 
-🔌 PDO e extensões MySQL devem estar habilitadas.
+- PDO e extensões MySQL devem estar habilitadas.
 
-✔️ Validações adicionais são indicadas para ambientes produtivos.
+- Validações adicionais são indicadas para ambientes produtivos.
 
 ## 📜 Licença
 Projeto aberto para uso e modificação.
