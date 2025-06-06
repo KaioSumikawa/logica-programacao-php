@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['msg']) && $_GET['msg'] === "ok") {
-    echo "<h1 style='color: green; text-align: center;'>Dados enviados com sucesso!</h1>";
+    echo "<h1 style='color: green; text-align: center;'>✅ Dados enviados com sucesso!</h1>";
 }
 ?>
 <!DOCTYPE html>
@@ -8,18 +8,20 @@ if (isset($_GET['msg']) && $_GET['msg'] === "ok") {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Formulários com PHP</title>
+    <title>Formulários com PHP 📋</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 600px;
             margin: 40px auto;
             padding: 0 15px;
+            background-color: #fafafa;
         }
         label {
             display: block;
             margin-top: 15px;
             font-weight: bold;
+            color: #333;
         }
         input[type="text"],
         input[type="email"] {
@@ -29,6 +31,7 @@ if (isset($_GET['msg']) && $_GET['msg'] === "ok") {
             border-radius: 4px;
             border: 1px solid #ccc;
             box-sizing: border-box;
+            font-size: 14px;
         }
         input[type="submit"] {
             background-color: #007bff;
@@ -47,12 +50,12 @@ if (isset($_GET['msg']) && $_GET['msg'] === "ok") {
         h1 {
             text-align: center;
             margin-bottom: 25px;
-            color: #333;
+            color: #222;
         }
     </style>
 </head>
 <body>
-    <h1>Dados para Contato</h1>
+    <h1>Dados para Contato 📞</h1>
     <form action="recebimento.php" method="post" autocomplete="off" novalidate>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
