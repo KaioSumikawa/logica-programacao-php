@@ -1,98 +1,97 @@
 # logica-programacao-php
-Exercícios e anotações do curso "Lógica de Programação Direcionada a PHP" do Senac. Foco em fundamentos da lógica com aplicação prática em PHP.
+- Exercícios e anotações do curso "Lógica de Programação Direcionada a PHP" do Senac. Foco em fundamentos da lógica com aplicação prática em PHP.
 
 # Aula 1 – Agenda de Contatos em PHP 
-Este projeto implementa uma agenda de contatos básica utilizando PHP e MySQL, permitindo cadastrar, editar, excluir e listar contatos.
+- Este projeto implementa uma agenda de contatos básica utilizando PHP e MySQL, permitindo cadastrar, editar, excluir e listar contatos.
 
 ## ▶️ Como Usar
-Configure o banco de dados MySQL com a estrutura fornecida.
+- Configure o banco de dados MySQL com a estrutura fornecida.
 
-Atualize os dados de conexão no arquivo conexao.php.
+- Atualize os dados de conexão no arquivo conexao.php.
 
-Execute o projeto em um servidor local (XAMPP, WAMP, etc).
+- Execute o projeto em um servidor local (XAMPP, WAMP, etc).
 
-Use a interface para cadastrar, editar, excluir e listar contatos.
+- Use a interface para cadastrar, editar, excluir e listar contatos.
 
 ## 🛠️ Tecnologias Utilizadas
-PHP com PDO para conexão segura ao banco de dados
+- PHP com PDO para conexão segura ao banco de dados
 
-MySQL
+- MySQL
 
-Bootstrap 5 para estilização
+- Bootstrap 5 para estilização
 
 ## 📂 Estrutura de Arquivos
 
-conexao.php — Conexão com o banco de dados
+- conexao.php — Conexão com o banco de dados
 
-index.php — Página principal com a lista de contatos
+- index.php — Página principal com a lista de contatos
 
-opcontato.php — Processa as operações (inserir, editar, excluir)
+- opcontato.php — Processa as operações (inserir, editar, excluir)
 
-adicionar.php — Formulário para adicionar novo contato
+- adicionar.php — Formulário para adicionar novo contato
 
-editar.php — Formulário para editar contato existente
+- editar.php — Formulário para editar contato existente
 
-README.md — Documentação do projeto
+- README.md — Documentação do projeto
 
 # Aula 2 – Lógica de Programação em PHP
-Este projeto traz exemplos práticos básicos de PHP envolvendo operações matemáticas, estruturas condicionais e manipulação de variáveis.
+- -Este projeto traz exemplos práticos básicos de PHP envolvendo operações matemáticas, estruturas condicionais e manipulação de variáveis.
 
 ## ▶️ Como Usar
-Abra os arquivos PHP em seu servidor local.
+- Abra os arquivos PHP em seu servidor local.
 
-Veja os exemplos de cálculo de saldo, conversão de moedas, média de notas e operadores relacionais.
+- Veja os exemplos de cálculo de saldo, conversão de moedas, média de notas e operadores relacionais.
 
-Execute para entender a saída e testar alterações.
+- Execute para entender a saída e testar alterações.
 
 ## 🛠️ Tecnologias Utilizadas
-PHP básico para lógica e manipulação de variáveis
+- PHP básico para lógica e manipulação de variáveis
 
-HTML e CSS para exibição e estilo simples
+- HTML e CSS para exibição e estilo simples
 
 ## 📂 Estrutura de Arquivos
 
-aula02.php — Código com exemplos e exercícios de lógica
+- aula02.php — Código com exemplos e exercícios de lógica
 
-style.css — Estilos para as páginas de saída
+- style.css — Estilos para as páginas de saída
 
-README.md — Documentação do projeto
+- README.md — Documentação do projeto
 
 # Aula 3 - Arrays e Estruturas de Dados em PHP
 ## 📚 Descrição
-Esta aula aborda o uso de arrays simples e associativos em PHP para armazenar dados estruturados. Você verá exemplos práticos com listas de clientes e estoque de carros, incluindo a manipulação e exibição dessas informações dinamicamente.
+- Esta aula aborda o uso de arrays simples e associativos em PHP para armazenar dados estruturados. Você verá exemplos práticos com listas de clientes e estoque de carros, incluindo a manipulação e exibição dessas informações dinamicamente.
 
 ## 🗂️ Estrutura de Arquivos
-index.php — Página principal que carrega e exibe o estoque de carros usando PHP e HTML.
+- index.php — Página principal que carrega e exibe o estoque de carros usando PHP e HTML.
 
-clientes.php — Script PHP que contém os dados dos carros (arrays) e a lógica para exibir os itens.
+- clientes.php — Script PHP que contém os dados dos carros (arrays) e a lógica para exibir os itens.
 
-01.jpg, 02.jpg, 03.jpg — Imagens representando os carros do estoque.
+- 01.jpg, 02.jpg, 03.jpg — Imagens representando os carros do estoque.
 
 ## ▶️ Como Usar
-Certifique-se de ter o PHP instalado no seu ambiente local ou servidor.
+- Certifique-se de ter o PHP instalado no seu ambiente local ou servidor.
 
-Coloque todos os arquivos (index.php, clientes.php, imagens) na mesma pasta.
+- Coloque todos os arquivos (index.php, clientes.php, imagens) na mesma pasta.
 
-Acesse o arquivo index.php pelo navegador (exemplo: http://localhost/aula3/index.php).
+- Acesse o arquivo index.php pelo navegador (exemplo: http://localhost/aula3/index.php).
 
-Visualize a listagem dos carros com suas informações e imagens.
+- Visualize a listagem dos carros com suas informações e imagens.
 
 ## 💡 Conceitos abordados
-Arrays simples e associativos.
+- Arrays simples e associativos.
 
-Estrutura de dados em PHP.
+- Estrutura de dados em PHP.
 
-Laços de repetição para percorrer arrays (foreach).
+- Laços de repetição para percorrer arrays (foreach).
 
-Exibição dinâmica de dados no HTML via PHP.
+- Exibição dinâmica de dados no HTML via PHP.
 
-Boas práticas de segurança, como uso de htmlspecialchars() para evitar problemas de injeção de código.
-
+- Boas práticas de segurança, como uso de htmlspecialchars() para evitar problemas de injeção de código.
 
 
 # Aula 04 – Cadastro de Preferências com PHP
 
-Este projeto é parte do curso de **Lógica de Programação com PHP** no SENAC. O objetivo é desenvolver um formulário web que colete informações do usuário e exiba os dados enviados utilizando PHP puro.
+- Este projeto é parte do curso de **Lógica de Programação com PHP** no SENAC. O objetivo é desenvolver um formulário web que colete informações do usuário e exiba os dados enviados utilizando PHP puro.
 
 ## 💻 Funcionalidades
 
@@ -140,7 +139,7 @@ http://localhost/aula04/index.php
 
 ## 📋 Descrição
 
-Nesta aula, você aprende a criar um formulário em HTML que envia dados para um script PHP, que os processa e exibe na tela. É uma introdução prática ao uso de formulários e ao tratamento de dados recebidos via método POST.
+- Nesta aula, você aprende a criar um formulário em HTML que envia dados para um script PHP, que os processa e exibe na tela. É uma introdução prática ao uso de formulários e ao tratamento de dados recebidos via método POST.
 
 ## ▶️ Como Usar
 
@@ -171,7 +170,7 @@ Nesta aula, você aprende a criar um formulário em HTML que envia dados para um
 
 ## 📋 Descrição
 
-Nesta aula, criamos um sistema simples de agendamento odontológico usando PHP e formulários HTML. O usuário pode selecionar um dentista, escolher serviços, data e hora da consulta. Os dados são enviados via POST e exibidos em uma página de confirmação.
+- Nesta aula, criamos um sistema simples de agendamento odontológico usando PHP e formulários HTML. O usuário pode selecionar um dentista, escolher serviços, data e hora da consulta. Os dados são enviados via POST e exibidos em uma página de confirmação.
 
 ## ▶️ Como Usar
 
@@ -201,13 +200,113 @@ Nesta aula, criamos um sistema simples de agendamento odontológico usando PHP e
 
 ## 📌 Observações
 
-Este projeto é apenas para fins didáticos, como parte de uma sequência de aulas introdutórias de PHP.  
-Todos os dados são processados localmente, sem banco de dados.
+## Aula 7 – Formulário de Contato em PHP
+
+## 📋 Descrição
+Projeto simples em PHP que implementa um formulário de contato com os campos Nome, Email e Telefone. Ao enviar o formulário, os dados são recebidos, validados e exibidos para o usuário, que recebe uma confirmação de envio.
+
+## ▶️ Como Usar
+- Abra o arquivo index.php no navegador.
+
+- Preencha os campos do formulário.
+
+- Clique em "Enviar".
+
+- O sistema redireciona para receba.php, que exibe os dados enviados e oferece a opção de voltar ao formulário com mensagem de confirmação.
+
+## 🗂️ Estrutura de Arquivos
+- index.php – Formulário HTML para inserção dos dados.
+
+- receba.php – Script PHP que recebe, valida e exibe os dados do formulário.
+
+## 💻 Tecnologias Utilizadas
+- PHP (para processamento do formulário)
+
+- HTML5 (estrutura do formulário)
+
+- CSS básico inline para estilo simples e responsivo
+
+## 📌 Observações
+- Utiliza htmlspecialchars para evitar vulnerabilidades XSS.
+
+- Mensagem de confirmação via parâmetro GET.
+
+## Aula 8 - Sistema de Gerenciamento de Contatos e Fornecedores 📚
+Este projeto corresponde à Aula 8 do curso e consiste em um sistema web simples para gerenciar contatos e fornecedores, utilizando PHP com PDO para conexão segura ao banco de dados MySQL e Bootstrap 5 para a interface.
+
+## 🚀 Funcionalidades
+- Cadastro, edição e exclusão de contatos.
+
+- Cadastro, edição e exclusão de fornecedores.
+
+- Interface responsiva com modais para formulários.
+
+- Uso de prepared statements para segurança.
+
+- Navegação por menu dinâmico.
+
+## 🛠️ Tecnologias
+- PHP 7+
+
+- MySQL
+
+- PDO
+
+- Bootstrap 5
+
+## 📂 Estrutura do Projeto
+- conexao.php — conexão PDO.
+
+- menu.php — menu comum.
+
+- pgcontato.php — gerenciamento de contatos.
+
+- pgfornecedor.php — gerenciamento de fornecedores.
+
+- opcontato.php e opfornecedor.php — operações CRUD.
+
+## ⚙️ Como usar
+- Configure o banco de dados com as tabelas contatos e fornecedores.
+
+- Atualize conexao.php com as credenciais.
+
+- Coloque os arquivos no servidor web.
+
+- Acesse as páginas via navegador e gerencie os registros.
+
+## 🗃️ Tabelas SQL recomendadas
+- sql
+- Copiar
+- Editar
+- CREATE TABLE contatos (
+    - id INT AUTO_INCREMENT PRIMARY KEY,
+    - nome VARCHAR(100) NOT NULL,
+    - email VARCHAR(100) NOT NULL,
+    - telefone VARCHAR(20) NOT NULL
+);
+
+- CREATE TABLE fornecedores (
+    - id INT AUTO_INCREMENT PRIMARY KEY,
+    - razao VARCHAR(150) NOT NULL,
+    - fantasia VARCHAR(150) NOT NULL,
+    - endereco VARCHAR(255) NOT NULL,
+    - email VARCHAR(100) NOT NULL,
+    - telefone VARCHAR(20) NOT NULL
+);
+## ⚠️ Observações
+- Recomendado PHP 7.4 ou superior.
+
+- PDO e extensões MySQL devem estar habilitadas.
+
+- Validações adicionais são indicadas para ambientes produtivos.
+
+
 
 ## 🏫 Curso
 
 **SENAC – Lógica de Programação com PHP**  
-Professor: Fabiano Albers
-Aluno: Kaio Sumikawa
+- Professor: Fabiano Albers
+- Aluno: Kaio Sumikawa
 
-📁 Licença: Uso educacional
+## 📜 Licença: Uso educacional
+- Projeto aberto para uso e modificação.
