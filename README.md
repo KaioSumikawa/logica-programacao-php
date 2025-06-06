@@ -20,15 +20,15 @@ Este projeto é parte do curso de **Lógica de Programação com PHP** no SENAC.
 
 ## 📂 Estrutura de Arquivos
 
-aula04/
+- aula04/
 
-index.php – Página com o formulário HTML
+- index.php – Página com o formulário HTML
 
-receber.php – Script PHP que processa e exibe os dados enviados
+- receber.php – Script PHP que processa e exibe os dados enviados
 
-estilos.css – Estilo visual da interface
+- estilos.css – Estilo visual da interface
 
-README.md – Documentação do projeto
+- README.md – Documentação do projeto
 
 ## ▶️ Como Usar
 
