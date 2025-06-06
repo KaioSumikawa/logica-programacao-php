@@ -89,7 +89,6 @@ Exibição dinâmica de dados no HTML via PHP.
 Boas práticas de segurança, como uso de htmlspecialchars() para evitar problemas de injeção de código.
 
 
-
 # Aula 04 – Cadastro de Preferências com PHP
 
 Este projeto é parte do curso de **Lógica de Programação com PHP** no SENAC. O objetivo é desenvolver um formulário web que colete informações do usuário e exiba os dados enviados utilizando PHP puro.
@@ -201,8 +200,35 @@ Nesta aula, criamos um sistema simples de agendamento odontológico usando PHP e
 
 ## 📌 Observações
 
-Este projeto é apenas para fins didáticos, como parte de uma sequência de aulas introdutórias de PHP.  
-Todos os dados são processados localmente, sem banco de dados.
+## Aula 7 – Formulário de Contato em PHP
+📋 Descrição
+Projeto simples em PHP que implementa um formulário de contato com os campos Nome, Email e Telefone. Ao enviar o formulário, os dados são recebidos, validados e exibidos para o usuário, que recebe uma confirmação de envio.
+
+## ▶️ Como Usar
+Abra o arquivo index.php no navegador.
+
+Preencha os campos do formulário.
+
+Clique em "Enviar".
+
+O sistema redireciona para receba.php, que exibe os dados enviados e oferece a opção de voltar ao formulário com mensagem de confirmação.
+
+## 🗂️ Estrutura de Arquivos
+index.php – Formulário HTML para inserção dos dados.
+
+receba.php – Script PHP que recebe, valida e exibe os dados do formulário.
+
+## 💻 Tecnologias Utilizadas
+PHP (para processamento do formulário)
+
+HTML5 (estrutura do formulário)
+
+CSS básico inline para estilo simples e responsivo
+
+## 📌 Observações
+Utiliza htmlspecialchars para evitar vulnerabilidades XSS.
+
+Mensagem de confirmação via parâmetro GET.
 
 ## 🏫 Curso
 
